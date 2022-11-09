@@ -1,4 +1,5 @@
-﻿namespace QuantumExamples.QuantumLib {
+﻿// SRC: https://learn.microsoft.com/en-us/azure/quantum/user-guide/host-programs?tabs=tabid-csharp
+namespace QuantumExamples.QuantumLib {
     
     // These are like 'using' in C#
     open Microsoft.Quantum.Canon;       // for ApplyToEach
@@ -16,6 +17,7 @@
     }
 
 
+    // SRC: https://learn.microsoft.com/en-us/azure/quantum/user-guide/
     operation MeasureQubitIsOne() : Result {
         use qubit = Qubit();   // allocates qubit for use (automatically in |0>)
         H(qubit);              // puts qubit in superposition of |0> and |1>
