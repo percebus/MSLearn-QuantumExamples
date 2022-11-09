@@ -3,7 +3,7 @@
 
 namespace QuantumExamples.QuantumLib.Tests
 {
-    public class MeasureQubits2_Tests
+    public class MeasureQubits_Tests
     {
         [Fact]
         public void Run_with_4_bits__returns__4()
@@ -11,7 +11,7 @@ namespace QuantumExamples.QuantumLib.Tests
             int numOfBits = 4;
             using (var oQuantumSimulator = new QuantumSimulator())
             {
-                var result = MeasureQubits2.Run(oQuantumSimulator, numOfBits).Result;
+                var result = MeasureQubits.Run(oQuantumSimulator, numOfBits).Result;
                 Assert.Equal(numOfBits, result.Count);
             }
         }
@@ -23,7 +23,7 @@ namespace QuantumExamples.QuantumLib.Tests
             int numOfBits = 8;
             using (var oQuantumSimulator = new QuantumSimulator())
             {
-                var result = MeasureQubits2.Run(oQuantumSimulator, numOfBits).Result;
+                var result = MeasureQubits.Run(oQuantumSimulator, numOfBits).Result;
                 Assert.Equal(numOfBits, result.Count);
             }
         }
@@ -35,8 +35,8 @@ namespace QuantumExamples.QuantumLib.Tests
             int numOfBits = 8;
             using (var oQuantumSimulator = new QuantumSimulator())
             {
-                var result1 = MeasureQubits2.Run(oQuantumSimulator, numOfBits).Result;
-                var result2 = MeasureQubits2.Run(oQuantumSimulator, numOfBits).Result;
+                var result1 = MeasureQubits.Run(oQuantumSimulator, numOfBits).Result;
+                var result2 = MeasureQubits.Run(oQuantumSimulator, numOfBits).Result;
                 Assert.NotEqual(result1, result2);
             }
         }

@@ -37,7 +37,9 @@
         return ForEach(MResetZ, qubits); // perform MResetZ on each qubit, returns the resulting array
     }
 
-    
+
+    // AKA: SampleRandomNumberInRange
+    // SRC: https://github.com/hsirtl/devops-for-quantum-computing-azure-function/blob/main/src/QApp.Qsharp/Program.qs
     operation MeasureQubits2(n : Int) : Result[] {
         use qubits = Qubit[n];  // create a register of n qubits
         ApplyToEach(H, qubits); // put each qubit in superposition
