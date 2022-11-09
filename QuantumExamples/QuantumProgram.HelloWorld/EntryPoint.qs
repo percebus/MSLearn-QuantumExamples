@@ -1,5 +1,5 @@
 ﻿// SRC: https://learn.microsoft.com/en-us/azure/quantum/user-guide/
-namespace QuantumExamples.HelloWorld {
+namespace QuantumExamples.QuantumProgram.HelloWorld {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
